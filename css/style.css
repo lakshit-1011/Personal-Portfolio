@@ -22,7 +22,7 @@
 }
 
 body {
-    background: var(--bg-color);
+    background-color: rgb(237, 234, 230);
     color: var(--text-color);
 }
 
@@ -93,7 +93,8 @@ span {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
+    background-color: rgb(237, 234, 230);
+    border-bottom: 2px solid rgb(186, 180, 180);
 }
 
 .home-text {
@@ -122,7 +123,8 @@ span {
 
 .two {
     display: inline-block;
-    color: var(--second-color);
+    color: #4e4d4d;
+
     font-size: 20px;
     font-weight: 500;
 }
@@ -130,7 +132,7 @@ span {
 .home-text h1 {
     font-size: 36px;
     font-weight: 500;
-    color: var(--text-color);
+    color: #4e4d4d;
     line-height: 1.1;
     margin: 0 0 8px;
 }
@@ -149,7 +151,7 @@ span {
     }
   } */
 .home-text h3 {
-    color: var(--text-color);
+    color: #4e4d4d;
     margin: 0 0 35px;
     font-size: 3rem;
     font-weight: 700;
@@ -157,7 +159,7 @@ span {
 }
 
 .home-text p {
-    color: var(--second-color);
+    color: rgb(113, 104, 104);
     font-size: var(--p-font);
     line-height: 1.8;
     margin-bottom: 40px;
@@ -200,28 +202,28 @@ span {
 .home-image img {
     width: 500px;
     border-radius: 50px;
-    border: 2px solid white;
+    border: 2px solid rgb(183, 172, 172);
+    box-shadow: rgba(99, 95, 95, 0.25) 0px 14px 28px, rgba(134, 131, 131, 0.22) 0px 10px 10px;
 
 }
 
 .home-image img:hover {
-    transform: scale(1.1);
-    border: 1px solid white;
-    box-shadow: 0px -25px 20px -20px rgba(169, 168, 168, 0.45), 25px 0 20px -20px rgba(184, 181, 181, 0.45), 0px 25px 20px -20px rgba(181, 180, 180, 0.45), -25px 0 20px -20px rgba(161, 160, 160, 0.45);
 
-    /* border: 1px solid white; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 /* about section */
 
 .about {
     padding-inline: 40px;
-    background-color: rgb(73, 71, 71);
+    background-color: rgb(237, 234, 230);
     height: 90vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
+    border-bottom: 2px solid rgb(186, 180, 180);
+
 }
 
 .about-text {
@@ -244,7 +246,7 @@ span {
 
 .about-img:hover {
     transform: scale(1.1);
-    box-shadow: rgba(196, 192, 192, 0.25) 0px 14px 28px, rgba(224, 221, 221, 0.22) 0px 10px 10px;
+    box-shadow: rgba(99, 95, 95, 0.25) 0px 14px 28px, rgba(134, 131, 131, 0.22) 0px 10px 10px;
 }
 
 .about-img img {
@@ -257,18 +259,19 @@ span {
 .about-text h2 {
     font-size: 32px;
     line-height: 1;
+    color: #4e4d4d;
 }
 
 .about-text h4 {
     font-size: 24px;
     font-weight: 600;
-    color: var(--text-color);
+    color: #4e4d4d;
     line-height: 1.7;
     margin: 15px 0 30px;
 }
 
 .about-text p {
-    color: var(--second-color);
+    color: rgb(113, 104, 104);
     font-size: var(--p-font);
     font-family: 'Poppins', Times, serif;
     line-height: 1.8;
@@ -277,8 +280,8 @@ span {
 
 .technical {
     width: 100%;
-    height: 100vh;
-    margin-top: 180px;
+    height: 130vh;
+    margin-top: 140px;
 
     display: flex;
     align-items: center;
@@ -287,6 +290,7 @@ span {
 }
 
 .technical h2 {
+    color: #4e4d4d;
     font-size: 36px;
     font-family: "Poppins", sans-serif;
     border-bottom: 2px solid rgb(90, 200, 225);
@@ -295,7 +299,7 @@ span {
 .technical-sub {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 50px;
     width: 100%;
     padding-top: 70px;
     padding-left: 60px;
@@ -308,15 +312,20 @@ span {
     justify-content: center;
     align-items: flex-start;
     padding: 20px 20px;
+    border: 2px solid rgb(133, 131, 131);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
     border-radius: 10px;
     gap: 50px;
-    background-color: rgb(60 55 55);
+    background-color: rgb(235, 231, 212)
+}
+
+.skills:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .skills-title {
     font-family: "Poppins", sans-serif;
-    color: rgb(192, 189, 189);
-    ;
+    color: #4e4d4d;
 }
 
 .skills-logo {
@@ -342,11 +351,13 @@ span {
     align-items: center;
     margin-top: 200px;
     padding-top: 40px;
-    background-color: rgb(73, 71, 71);
+    background-color: rgb(237, 234, 230);
+    border-top: 2px solid grey;
     flex-direction: column;
 }
 
 .project h2 {
+    color: #4e4d4d;
     font-size: 36px;
     font-family: "Poppins", sans-serif;
     border-bottom: 2px solid rgb(90, 200, 225);
@@ -377,8 +388,16 @@ span {
     justify-content: center;
     padding: 20px 20px;
     gap: 20px;
-    border-radius: 20px;
-    background-color: #9b9797;
+    /* border-radius: 20px; */
+    background-color: rgb(235, 231, 212);
+    border: 2px solid rgb(133, 131, 131);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    border-radius: 10px;
+    /* background-color: #9b9797; */
+}
+
+.project1:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .project1-content {
@@ -405,29 +424,37 @@ span {
     padding-bottom: 10px;
 }
 
-.project1-content h4{
-    font-family: "Poppins",sans-serif;
+.project1-content h4 {
+    font-family: "Poppins", sans-serif;
     font-size: 25px;
     border-bottom: 2px solid rgb(90, 200, 225);
 }
 
 
-.project2-content h4{
-    font-family: "Poppins",sans-serif;
+.project2-content h4 {
+    font-family: "Poppins", sans-serif;
     font-size: 25px;
     border-bottom: 2px solid rgb(90, 200, 225);
 }
 
 .project2 {
     width: 650px;
-    height: 408px;
+    height: 420px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px 20px;
     gap: 20px;
-    border-radius: 20px;
-    background-color: #9b9797;
+    /* border-radius: 20px; */
+    border: 2px solid rgb(133, 131, 131);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    border-radius: 10px;
+    background-color: rgb(235, 231, 212)
+}
+
+
+.project2:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .project1-link {
@@ -456,28 +483,36 @@ span {
     width: 40px;
 }
 
+
 .link2-img {
     justify-content: center;
     width: 60px;
     height: 60px;
     display: flex;
-    background-color: #5d5959;
+    background-color: #ebe5ce;
+    border: 2px solid rgb(173, 170, 170);
     object-fit: contain;
     border-radius: 100px;
     align-items: center;
 }
-.git:hover{
+
+.git:hover {
     background-color: rgb(240, 116, 116) !important;
 }
-.link2-img:hover{
+
+.link2-img:hover {
     background-color: #05b4ff;
 }
+
 .link2-img2 {
     width: 40px;
 }
-.Form{
+
+.Form {
     height: 100vh;
-    background-color: #4e4d4d;
+    background-color: rgb(237, 234, 230);
+    border-top: 2px solid rgb(186, 180, 180);
+    ;
     width: 100%;
     display: flex;
     align-items: center;
@@ -485,14 +520,18 @@ span {
     flex-direction: column;
     gap: 20px;
 }
-.Form h2{
-    font-family: "Poppins",sans-serif;
+
+.Form h2 {
+    color: #4e4d4d;
+    font-family: "Poppins", sans-serif;
     font-size: 32px;
     border-bottom: 2px solid rgb(90, 200, 225);
 }
-.Form p{
+
+.Form p {
+    color: #4e4d4d;
     padding-inline: 100px;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 22px;
 }
 
@@ -526,9 +565,9 @@ span {
 
 .contact-form-info-content ul li label {
     font-size: 18px;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
-    color: #e7e5e8;
+    color: #4e4d4d;
     cursor: text;
     margin-bottom: 5px;
 }
@@ -543,8 +582,8 @@ span {
     font-size: 14px;
     font-weight: 400;
     color: #150823;
-    background: #cdbcbc;
-    border: 1px solid #d2d6db;
+    background: #edebeb;
+    border: 1px solid grey;
     border-radius: 6px;
     width: 100%;
     position: relative;
@@ -571,9 +610,9 @@ span {
 
 .message-container label {
     font-size: 18px;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
-    color: #e7e5e8;
+    color: #4e4d4d;
     cursor: text;
     margin-bottom: 5px;
 }
@@ -590,8 +629,8 @@ span {
     font-weight: 400;
     outline: none;
     color: #150823;
-    background: #cdbcbc;
-    border: 1px solid #d2d6db;
+    background: #edebeb;
+    border: 1px solid grey;
     border-radius: 6px;
     position: relative;
 }
@@ -608,14 +647,20 @@ span {
     padding: 8px 30px;
     border: 1px solid #ec3636;
     color: #fff;
+    box-shadow: rgba(104, 102, 102, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
     border-radius: 4px;
 }
 
-.contact-form-foot a:hover{
+.contact-form-foot a:hover {
     color: #000;
-    background-color: #f4ecec;
+    background-color: #918e8b;
+
+    box-shadow: rgba(104, 102, 102, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
     border: none;
 }
+
 .social {
     width: 287px;
     height: 43px;
@@ -625,14 +670,17 @@ span {
     align-items: center;
 
 }
-.giti{
+
+.giti {
     width: 40px !important;
 }
+
 .social img {
     width: 36px;
     background: #626161;
     border-radius: 100%;
 }
+
 .fb:hover {
     background-color: #007bff;
 }
@@ -641,8 +689,10 @@ span {
     background-color: rgb(155, 81, 224);
     ;
 }
-.giti:hover,.giti:active{
-background-color: rgb(39, 38, 38);
+
+.giti:hover,
+.giti:active {
+    background-color: rgb(39, 38, 38);
 }
 
 .li:hover {
@@ -653,9 +703,15 @@ background-color: rgb(39, 38, 38);
     background-color: #007bff;
 }
 
-footer{
+footer {
     height: 70px;
+    border-top: 2px solid rgb(186, 180, 180);
+    ;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+footer p {
+    color: #2a2a2a;
 }
